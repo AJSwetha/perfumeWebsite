@@ -1,0 +1,299 @@
+*{
+    margin:0;
+    padding:0;
+    overflow-x:clip;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+.navbar {
+    background-color: black;
+    padding: 20px;
+}
+
+.navbar-brand {
+    color:rgb(197, 193, 193) !important;
+    font-weight:bold !important;
+}
+.navbar-nav{
+    margin-left: auto;
+}
+.nav-link {
+    color: rgb(197, 193, 193) !important;
+    font-size:22px;
+    font-weight:bold !important;
+    padding-left: 10px;
+}
+
+.nav-link:hover {
+    color: white !important;
+}
+.navbar-toggler {
+    border: 1px solid white;
+}
+
+.navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+/* SEARCH Section */
+.firstsection{
+    background-color: rgb(240, 238, 235);
+    height:80vh;
+}
+.searchBar input{
+    width:60%;
+    padding:15px;
+    font-size:20px;
+}
+.searchBar{
+    padding:50px;
+    text-align:center;
+}
+
+/* Products Section */
+.products {
+    text-align: center;
+}
+
+.products .box {
+    height: 250px;
+}
+
+.box {
+    border-radius: 10px;
+    background-image: url("boxes.jpg");
+    background-size: cover;
+    transition: all 0.5s ease-in-out;
+}
+
+.box2 {
+    background-image: url("flowerBox.jpg");
+}
+
+.box:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 30px rgba(209, 82, 209, 0.25);
+}
+
+.products img {
+    max-width: 180px;
+    width: 100%;
+    height: 240px;
+    object-fit: contain;
+    padding: 15px;
+    transform: translateY(30px);
+}
+
+@media (max-width: 576px) {
+
+    .products {
+        text-align: center;
+        padding: 10px 0;
+        margin-bottom: 0;
+        --bs-gutter-x: 8px;
+    }
+
+    .productsSection {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .products .box {
+        height: 210px;
+    }
+
+    .products img {
+        width: 100%;
+        max-width: none;
+        height: 195px;
+        padding: 0;
+        object-fit:contain;
+        transform: translate(18px, 5px) scale(1.12);        
+    }
+}
+
+/* BackgroundImg Section */
+.backimg {
+    background-image:url("backImg.png");
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* margin: 40px auto; */
+}
+
+.backimg h1 {
+    padding-top: 50px;
+    padding-left:30px;
+    font-size: 50px;
+    letter-spacing: 8px;
+    color: rgb(173, 11, 173);
+}
+
+#firsthead {
+    padding-top: 150px;
+    color: rgb(173, 11, 173);
+}
+
+#secondhead {
+    color: orange;
+}
+@media (max-width: 900px) {
+    .backimg {
+        margin-top: 20px;
+        background-position: 80% center;
+    }
+
+    .backimg h1 {
+        font-size: 35px;
+        letter-spacing: 6px;
+        padding-left: 30px;
+        padding-top: 35px;
+    }
+
+    #firsthead {
+        padding-top: 100px;
+    }
+}
+
+/* ABOUT Section */
+.about {
+    text-align: center;
+    background-color:rgb(240, 238, 235);
+}
+
+.about h1 {
+    text-align: center;
+    color: rgb(173, 11, 173);
+    padding-top:20px;
+    font-size: 34px;
+    letter-spacing: 3px;
+}
+
+.about span {
+    color: rgb(173, 11, 173);
+}
+
+.about p {
+    font-size:18px;
+    padding-top:10px;
+    line-height: 35px;
+    text-align: justify;
+}
+/* Mobile View */
+@media (max-width: 900px) {
+  .about p{
+    font-size:17px;
+  }  
+}
+@media (max-width: 576px) {
+
+    .about h1 {
+        font-size: 26px;
+    }
+
+    .about p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+}
+
+/* Selling Products */
+.sellingPage {
+    background-color: rgb(17, 17, 17);
+    padding: 30px 12px 40px;
+}
+
+.sellingPage h1 {
+    text-align: center;
+    color: rgb(173, 11, 173);
+    font-size: 34px;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+#containerSell {
+    max-width: 1200px;
+    margin: 15px auto;
+}
+
+.grid {
+    min-height: 340px;
+    height: 100%;
+    background-color: rgb(240, 238, 235);
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 15px;
+}
+
+.grid img {
+    width: 100%;
+    max-width: 250px;
+    height: 220px;
+    object-fit: contain;
+    transition: all 0.5s ease-in-out;
+}
+.grid img:hover{
+transform: translateY(-10px) scale(1.03);
+}
+.grid h2 {
+    color: black;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.grid p {
+    color: rgb(173, 11, 173);
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+/* Tablet and mobile */
+@media (max-width: 767px) {
+    .sellingPage h1 {
+        font-size: 26px;
+        letter-spacing: 2px;
+    }
+
+    .grid {
+        min-height: 320px;
+    }
+}
+
+@media (max-width: 400px) {
+    .sellingPage h1 {
+        font-size: 22px;
+        letter-spacing: 1px;
+    }
+}
+
+
+/* Perfume Footer */
+
+/* Footer */
+.footer {
+    background-color:rgb(68, 40, 68);
+    color: white;
+    padding:10px;
+    text-align: center;
+}
+
+.footer h4 {
+    color:orange;
+    letter-spacing: 3px;
+}
+
+.footer p {
+    font-size: 14px;
+    color:white;
+    margin-bottom: 8px;
+}
+
+.footer .copyright {
+    margin-bottom: 0;
+    font-size: 13px;
+}
+
